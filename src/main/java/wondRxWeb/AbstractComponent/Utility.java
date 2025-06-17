@@ -70,6 +70,19 @@ public class Utility {
 	@FindBy(xpath="(//ul[@id='head1'])[1] //a[contains(@href,'terms')]")
 	WebElement termsFooter;
 	
+	@FindBy(css="i[class='fab fa-linkedin']")
+	WebElement linkedIn;
+	
+	@FindBy(css="i[class*='facebook']")
+	WebElement facebook;
+	
+	@FindBy(css="i[class*='youtube']")
+	WebElement youtube;
+	
+	@FindBy(css="i[class*='instagram']")
+	WebElement instagram;
+	
+	
 	//parameterized JavaScript Executor
 	public void javaScriptExecutor(String script, Object... args)
 	{
@@ -235,4 +248,31 @@ public class Utility {
 		return termsFooter.isDisplayed() && termsFooter.isEnabled();
 	}
 	
+	//To check linkedIn Footer Link is Visible and Enabled
+	public boolean isLinkedInFooterLinkVisibleAndEnabled() {
+		javaScriptExecutor("window.scrollBy(0,3000)");
+		waitForWebElementToAppear(linkedIn);
+		return linkedIn.isDisplayed() && linkedIn.isEnabled();
+	}
+	
+	//To check Facebook Footer Link is Visible and Enabled
+	public boolean isFacebookFooterLinkVisibleAndEnabled() {
+		javaScriptExecutor("window.scrollBy(0,3000)");
+		waitForWebElementToAppear(facebook);
+		return facebook.isDisplayed() && facebook.isEnabled();
+	}
+	
+	//To check Youtube Footer Link is Visible and Enabled
+		public boolean isYoutubeFooterLinkVisibleAndEnabled() {
+		javaScriptExecutor("window.scrollBy(0,3000)");
+		waitForWebElementToAppear(youtube);
+		return youtube.isDisplayed() && youtube.isEnabled();
+	}
+		
+		//To check Instagram Footer Link is Visible and Enabled
+		public boolean isInstagramFooterLinkVisibleAndEnabled() {
+		javaScriptExecutor("window.scrollBy(0,3000)");
+		waitForWebElementToAppear(instagram);
+		return instagram.isDisplayed() && instagram.isEnabled();
+	}
 }

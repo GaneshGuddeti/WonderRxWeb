@@ -60,6 +60,10 @@ public class AboutTest extends BaseTestComponents{
 		softAssert.assertTrue(aboutPage.isFaqsFooterLinkVisibleAndEnabled(), "Footer FAQ's link is not visible or not enabled");
 		softAssert.assertTrue(aboutPage.isPrivacyPolicyFooterLinkVisibleAndEnabled(), "Footer privacy Policy link is not visible or not enabled");
 		softAssert.assertTrue(aboutPage.isTermsAndConditionsFooterLinkVisibleAndEnabled(), "Footer Terms & Confitions link is not visible or not enabled");
+		softAssert.assertTrue(aboutPage.isLinkedInFooterLinkVisibleAndEnabled(), "Footer LinkedIn link is not visible or not enabled");
+		softAssert.assertTrue(aboutPage.isFacebookFooterLinkVisibleAndEnabled(), "Footer Facebook link is not visible or not enabled");
+		softAssert.assertTrue(aboutPage.isYoutubeFooterLinkVisibleAndEnabled(), "Footer Youtube link is not visible or not enabled");
+		softAssert.assertTrue(aboutPage.isInstagramFooterLinkVisibleAndEnabled(), "Footer LinkedIn link is not visible or not enabled");
 		
 		softAssert.assertAll();
 	}

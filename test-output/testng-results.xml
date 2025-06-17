@@ -2,42 +2,42 @@
 <testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-17T16:22:34 IST" name="WonderRx" finished-at="2025-06-17T16:22:54 IST" duration-ms="20157">
+  <suite started-at="2025-06-17T17:45:01 IST" name="WonderRx" finished-at="2025-06-17T17:45:27 IST" duration-ms="26826">
     <groups>
     </groups>
-    <test started-at="2025-06-17T16:22:34 IST" name="Test" finished-at="2025-06-17T16:22:54 IST" duration-ms="20157">
+    <test started-at="2025-06-17T17:45:01 IST" name="Test" finished-at="2025-06-17T17:45:27 IST" duration-ms="26826">
       <class name="wondRxWeb.Test.AboutTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:wondRxWeb.Test.AboutTest@5aa9e4eb]" started-at="2025-06-17T16:22:34 IST" name="launchBrowser" finished-at="2025-06-17T16:22:41 IST" duration-ms="7336" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:wondRxWeb.Test.AboutTest@5aa9e4eb]" started-at="2025-06-17T17:45:01 IST" name="launchBrowser" finished-at="2025-06-17T17:45:09 IST" duration-ms="7906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="aboutInfo()[pri:0, instance:wondRxWeb.Test.AboutTest@5aa9e4eb]" started-at="2025-06-17T16:22:41 IST" name="aboutInfo" finished-at="2025-06-17T16:22:41 IST" duration-ms="49" status="PASS">
+        <test-method signature="aboutInfo()[pri:0, instance:wondRxWeb.Test.AboutTest@5aa9e4eb]" started-at="2025-06-17T17:45:09 IST" name="aboutInfo" finished-at="2025-06-17T17:45:09 IST" duration-ms="51" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutInfo -->
-        <test-method signature="verifyBannersAndMessagesOnThePage()[pri:0, instance:wondRxWeb.Test.AboutTest@5aa9e4eb]" started-at="2025-06-17T16:22:41 IST" name="verifyBannersAndMessagesOnThePage" finished-at="2025-06-17T16:22:41 IST" duration-ms="180" status="PASS">
+        <test-method signature="verifyBannersAndMessagesOnThePage()[pri:0, instance:wondRxWeb.Test.AboutTest@5aa9e4eb]" started-at="2025-06-17T17:45:09 IST" name="verifyBannersAndMessagesOnThePage" finished-at="2025-06-17T17:45:09 IST" duration-ms="201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBannersAndMessagesOnThePage -->
-        <test-method signature="verifyFooterNavigationLinks()[pri:0, instance:wondRxWeb.Test.AboutTest@5aa9e4eb]" started-at="2025-06-17T16:22:41 IST" name="verifyFooterNavigationLinks" finished-at="2025-06-17T16:22:42 IST" duration-ms="415" status="PASS">
+        <test-method signature="verifyFooterNavigationLinks()[pri:0, instance:wondRxWeb.Test.AboutTest@5aa9e4eb]" started-at="2025-06-17T17:45:09 IST" name="verifyFooterNavigationLinks" finished-at="2025-06-17T17:45:09 IST" duration-ms="623" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFooterNavigationLinks -->
-        <test-method signature="verifyHeaderNavigationLinks()[pri:0, instance:wondRxWeb.Test.AboutTest@5aa9e4eb]" started-at="2025-06-17T16:22:42 IST" name="verifyHeaderNavigationLinks" finished-at="2025-06-17T16:22:42 IST" duration-ms="264" status="PASS">
+        <test-method signature="verifyHeaderNavigationLinks()[pri:0, instance:wondRxWeb.Test.AboutTest@5aa9e4eb]" started-at="2025-06-17T17:45:09 IST" name="verifyHeaderNavigationLinks" finished-at="2025-06-17T17:45:10 IST" duration-ms="259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHeaderNavigationLinks -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:wondRxWeb.Test.AboutTest@5aa9e4eb]" started-at="2025-06-17T16:22:42 IST" name="closeBrowser" finished-at="2025-06-17T16:22:42 IST" duration-ms="380" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:wondRxWeb.Test.AboutTest@5aa9e4eb]" started-at="2025-06-17T17:45:10 IST" name="closeBrowser" finished-at="2025-06-17T17:45:10 IST" duration-ms="237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- wondRxWeb.Test.AboutTest -->
       <class name="wondRxWeb.Test.BrokenLinksTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:wondRxWeb.Test.BrokenLinksTest@7dcf94f8]" started-at="2025-06-17T16:22:42 IST" name="launchBrowser" finished-at="2025-06-17T16:22:48 IST" duration-ms="5935" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:wondRxWeb.Test.BrokenLinksTest@7dcf94f8]" started-at="2025-06-17T17:45:10 IST" name="launchBrowser" finished-at="2025-06-17T17:45:17 IST" duration-ms="7036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="brokenLinks()[pri:0, instance:wondRxWeb.Test.BrokenLinksTest@7dcf94f8]" started-at="2025-06-17T16:22:48 IST" name="brokenLinks" finished-at="2025-06-17T16:22:54 IST" duration-ms="5220" status="FAIL">
+        <test-method signature="brokenLinks()[pri:0, instance:wondRxWeb.Test.BrokenLinksTest@7dcf94f8]" started-at="2025-06-17T17:45:17 IST" name="brokenLinks" finished-at="2025-06-17T17:45:27 IST" duration-ms="10089" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -81,7 +81,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- brokenLinks -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:wondRxWeb.Test.BrokenLinksTest@7dcf94f8]" started-at="2025-06-17T16:22:54 IST" name="closeBrowser" finished-at="2025-06-17T16:22:54 IST" duration-ms="306" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:wondRxWeb.Test.BrokenLinksTest@7dcf94f8]" started-at="2025-06-17T17:45:27 IST" name="closeBrowser" finished-at="2025-06-17T17:45:27 IST" duration-ms="352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
