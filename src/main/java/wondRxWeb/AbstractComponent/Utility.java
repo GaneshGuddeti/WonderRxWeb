@@ -103,6 +103,7 @@ public class Utility {
 		contactUs.click();
 	}
 	
+	// Click on Header About Page us 
 	public void goToHeaderAboutPage()
 	{
 		aboutHeader.click();
