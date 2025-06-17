@@ -3,14 +3,12 @@ package wondRxWeb.Test;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-
 import wondRxWeb.TestComponents.BaseTestComponents;
 
 public class BrokenLinksTest extends BaseTestComponents{
-
 	//Verifying Broken links on the page
 	@Test
 	 public void brokenLinks()

@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utility {
 
-	WebDriver driver;
+	public WebDriver driver;
 	
 	
 	public Utility(WebDriver driver) {
@@ -46,28 +46,28 @@ public class Utility {
 	WebElement contactUs;
 	
 	//Footer PageFactory WebElement
-	@FindBy(xpath="(//ul[@id='head'])[1] //a[contains(@href,'about')]")
+	@FindBy(xpath="(//ul[@id='head1'])[1] //a[contains(@href,'about')]")
 	WebElement aboutFooter;
 	
-	@FindBy(xpath="(//ul[@id='head'])[1] //a[contains(@href,'doctors')]")
+	@FindBy(xpath="(//ul[@id='head1'])[1] //a[contains(@href,'doctors')]")
 	WebElement doctorsFooter;
 	
-	@FindBy(xpath="(//ul[@id='head'])[1] //a[contains(@href,'consumers')]")
+	@FindBy(xpath="(//ul[@id='head1'])[1] //a[contains(@href,'consumer')]")
 	WebElement consumersFooter;
 	
-	@FindBy(xpath="(//ul[@id='head'])[1] //a[contains(@href,'providers')]")
+	@FindBy(xpath="(//ul[@id='head1'])[1] //a[contains(@href,'providers')]")
 	WebElement providersFooter;
 	
-	@FindBy(xpath="(//ul[@id='head'])[1] //a[contains(@href,'blogs')]")
+	@FindBy(xpath="(//ul[@id='head1'])[1] //a[contains(@href,'blogs')]")
 	WebElement blogsFooter;
 	
-	@FindBy(xpath="(//ul[@id='head'])[1] //a[contains(@href,'faqs')]")
+	@FindBy(xpath="(//ul[@id='head1'])[1] //a[contains(@href,'faqs')]")
 	WebElement faqFooter;
 	
-	@FindBy(xpath="(//ul[@id='head'])[1] //a[contains(@href,'privacy')]")
+	@FindBy(xpath="(//ul[@id='head1'])[1] //a[contains(@href,'privacy')]")
 	WebElement privacyFooter;
 	
-	@FindBy(xpath="(//ul[@id='head'])[1] //a[contains(@href,'terms')]")
+	@FindBy(xpath="(//ul[@id='head1'])[1] //a[contains(@href,'terms')]")
 	WebElement termsFooter;
 	
 	//parameterized JavaScript Executor
@@ -103,112 +103,132 @@ public class Utility {
 		contactUs.click();
 	}
 	
-	// Click on Header About Page us 
+	// Click on Header About 
 	public void goToHeaderAboutPage()
 	{
 		aboutHeader.click();
 	}
 	
+	// Click on Header Doctors 
 	public void goToHeaderDoctorsPage()
 	{
 		doctorsHeader.click();
 	}
 	
+	// Click on Header Consumers 
 	public void goToHeaderConsumerPage()
 	{
 		consumersHeader.click();
 	}
 	
+	// Click on Header Providers 
 	public void goToHeaderProvidersPage()
 	{
 		providersHeader.click();
 	}
 	
+	// Click on Header Blogs 
 	public void goTOHeaderBlogsPage()
 	{
 		blogsHeader.click();
 	}
 	
+	// Click on Header FAQ's 
 	public void goToHeaderFaqPage()
 	{
 		faqHeader.click();
 	}
 	
+	// To check the About Header Link is Visible and Enabled
 	public boolean isAboutHeaderLinkVisibleAndEnabled() {
 		return aboutHeader.isDisplayed() && aboutHeader.isEnabled();
 	}
 	
+	//To check the Doctors Header Link is Visible and Enabled
 	public boolean isDoctorsHeaderLinkVisibleAndEnabled() {
 		return doctorsHeader.isDisplayed() && doctorsHeader.isEnabled();
 	}
 	
+	//To check the Consumers Header Link is Visible and Enabled
 	public boolean isConsumersHeaderLinkVisibleAndEnabled() {
 		return consumersHeader.isDisplayed() && consumersHeader.isEnabled();
 	}
 	
+	//To check the Providers Header Link is Visible and Enabled
 	public boolean isProvidersHeaderLinkVisibleAndEnabled() {
 		return providersHeader.isDisplayed() && providersHeader.isEnabled();
 	}
 	
+	//To check the Blogs Header Link is Visible and Enabled
 	public boolean isBlogsHeaderLinkVisibleAndEnabled() {
 		return blogsHeader.isDisplayed() && blogsHeader.isEnabled();
 	}
 	
+	//To check the FAQ's Header Link is Visible and Enabled
 	public boolean isFaqsHeaderLinkVisibleAndEnabled() {
 		return faqHeader.isDisplayed() && faqHeader.isEnabled();
 	}
 	
+	//To check the Logo Header Link is Visible and Enabled
 	public boolean isLogoLinkVisibleAndEnabled() {
 		return logo.isDisplayed() && logo.isEnabled();
 	}
 	
+	//To check Contact us Header Link is Visible and Enabled
 	public boolean isContactUsLinkVisibleAndEnabled() {
 		return contactUs.isDisplayed() && contactUs.isEnabled();
 	}
 	
-	//Footer
+	//To check the About Footer Link is Visible and Enabled
 	public boolean isAboutFooterLinkVisibleAndEnabled() {
 		javaScriptExecutor("window.scrollBy(0,3000)");
 		waitForWebElementToAppear(aboutFooter);
 		return aboutFooter.isDisplayed() && aboutFooter.isEnabled();
 	}
 	
+	//To check the Doctors Footer Link is Visible and Enabled
 	public boolean isDoctorsFooterLinkVisibleAndEnabled() {
 		javaScriptExecutor("window.scrollBy(0,3000)");
 		waitForWebElementToAppear(doctorsFooter);
 		return doctorsFooter.isDisplayed() && doctorsFooter.isEnabled();
 	}
 	
+	//To check the Consumers Footer Link is Visible and Enabled
 	public boolean isConsumersFooterLinkVisibleAndEnabled() {
 		javaScriptExecutor("window.scrollBy(0,3000)");
 		waitForWebElementToAppear(consumersFooter);
 		return consumersFooter.isDisplayed() && consumersFooter.isEnabled();
 	}
 	
+	//To check the Providers Footer Link is Visible and Enabled
 	public boolean isProvidersFooterLinkVisibleAndEnabled() {
 		javaScriptExecutor("window.scrollBy(0,3000)");
 		waitForWebElementToAppear(providersFooter);
 		return providersFooter.isDisplayed() && providersFooter.isEnabled();
 	}
 	
+	//To check the Blogs Footer Link is Visible and Enabled
 	public boolean isBlogsFooterLinkVisibleAndEnabled() {
 		javaScriptExecutor("window.scrollBy(0,3000)");
 		waitForWebElementToAppear(blogsFooter);
 		return blogsFooter.isDisplayed() && blogsFooter.isEnabled();
 	}
 	
+	//To check the FAQ's Footer Link is Visible and Enabled
 	public boolean isFaqsFooterLinkVisibleAndEnabled() {
 		javaScriptExecutor("window.scrollBy(0,3000)");
 		waitForWebElementToAppear(faqFooter);
 		return faqFooter.isDisplayed() && faqFooter.isEnabled();
 	}
 	
+	//To check the Privacy Policy Footer Link is Visible and Enabled
 	public boolean isPrivacyPolicyFooterLinkVisibleAndEnabled() {
 		javaScriptExecutor("window.scrollBy(0,3000)");
 		waitForWebElementToAppear(privacyFooter);
 		return privacyFooter.isDisplayed() && privacyFooter.isEnabled();
 	}
 	
+	//To check the Terms & Conditions Footer Link is Visible and Enabled
 	public boolean isTermsAndConditionsFooterLinkVisibleAndEnabled() {
 		javaScriptExecutor("window.scrollBy(0,3000)");
 		waitForWebElementToAppear(termsFooter);

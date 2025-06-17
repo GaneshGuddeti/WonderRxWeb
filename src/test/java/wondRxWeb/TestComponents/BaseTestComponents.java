@@ -8,6 +8,8 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterClass;
@@ -18,11 +20,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import wonderRxWeb.PageObjects.AboutPage;
 
 public class BaseTestComponents {
-	WebDriver driver;
+	public WebDriver driver;
 	public AboutPage aboutPage;
 	public SoftAssert softAssert = new SoftAssert();
 	
-	
+	// Initializing the Browser
 	public WebDriver initializeDriver() throws IOException
 	{
 		Properties prop = new Properties();
@@ -46,7 +48,10 @@ public class BaseTestComponents {
 		}
 		else if (browserName.equalsIgnoreCase("edge"))
 		{
-			
+			 WebDriverManager.edgedriver().setup();
+		     EdgeOptions options = new EdgeOptions();
+		     options.setAcceptInsecureCerts(true);
+		     driver = new EdgeDriver(options);
 		}
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -61,7 +66,6 @@ public class BaseTestComponents {
 		aboutPage = new AboutPage(driver);
 		aboutPage.goTo();
 		return aboutPage;
-		
 	}
 	
 	@AfterClass

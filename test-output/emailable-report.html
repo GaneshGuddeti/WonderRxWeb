@@ -9,27 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">WonderRx</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">25,874</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">31,743</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">WonderRx</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">wondRxWeb.Test.AboutTest</td><td><a href="#m0">verifyBannersAndMessagesOnThePage</a></td><td rowspan="1">1750150235573</td><td rowspan="1">232</td></tr><tr class="failedeven"><td><a href="#m1">verifyHeaderNavigationLinks</a></td><td rowspan="1">1750150235809</td><td rowspan="1">393</td></tr><tr class="failedodd"><td rowspan="1">wondRxWeb.Test.BrokenLinksTest</td><td><a href="#m2">brokenLinks</a></td><td rowspan="1">1750150243360</td><td rowspan="1">8825</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">wondRxWeb.Test.AboutTest</td><td><a href="#m3">aboutInfo</a></td><td rowspan="1">1750150231988</td><td rowspan="1">3582</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">WonderRx</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">wondRxWeb.Test.BrokenLinksTest</td><td><a href="#m0">brokenLinks</a></td><td rowspan="1">1750157399253</td><td rowspan="1">18036</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">wondRxWeb.Test.AboutTest</td><td><a href="#m1">aboutInfo</a></td><td rowspan="1">1750157393219</td><td rowspan="1">45</td></tr><tr class="passedeven"><td><a href="#m2">verifyBannersAndMessagesOnThePage</a></td><td rowspan="1">1750157393267</td><td rowspan="1">174</td></tr><tr class="passedeven"><td><a href="#m3">verifyFooterNavigationLinks</a></td><td rowspan="1">1750157393444</td><td rowspan="1">454</td></tr><tr class="passedeven"><td><a href="#m4">verifyHeaderNavigationLinks</a></td><td rowspan="1">1750157393900</td><td rowspan="1">253</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">wondRxWeb.Test.AboutTest#verifyBannersAndMessagesOnThePage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
-	expected [WONDRx | Smart Rx Kit that digitizes your Rx in No Time] but found [WONDRx | Smart Rx Kit that digitizes your Rx in No Time!],
-	expected [https://www.wondrx.com/abou] but found [https://www.wondrx.com/about]
-	at wondRxWeb.Test.AboutTest.verifyBannersAndMessagesOnThePage(AboutTest.java:45)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">wondRxWeb.Test.AboutTest#verifyHeaderNavigationLinks</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
-	expected [WONDRx | Smart Rx Kit that digitizes your Rx in No Time] but found [WONDRx | Smart Rx Kit that digitizes your Rx in No Time!],
-	expected [https://www.wondrx.com/abou] but found [https://www.wondrx.com/about]
-	at wondRxWeb.Test.AboutTest.verifyHeaderNavigationLinks(AboutTest.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">wondRxWeb.Test.BrokenLinksTest#brokenLinks</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+<h2>Test</h2><h3 id="m0">wondRxWeb.Test.BrokenLinksTest#brokenLinks</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
 	The link with the text  with the response code 999 has failed expected [true] but found [false]
-	at wondRxWeb.Test.BrokenLinksTest.brokenLinks(BrokenLinksTest.java:44)
+	at wondRxWeb.Test.BrokenLinksTest.brokenLinks(BrokenLinksTest.java:40)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">wondRxWeb.Test.AboutTest#aboutInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">wondRxWeb.Test.AboutTest#aboutInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">wondRxWeb.Test.AboutTest#verifyBannersAndMessagesOnThePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">wondRxWeb.Test.AboutTest#verifyFooterNavigationLinks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">wondRxWeb.Test.AboutTest#verifyHeaderNavigationLinks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

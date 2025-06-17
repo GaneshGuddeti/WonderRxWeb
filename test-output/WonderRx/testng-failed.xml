@@ -3,14 +3,6 @@
 <suite name="Failed suite [WonderRx]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="wondRxWeb.Test.AboutTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="verifyBannersAndMessagesOnThePage"/>
-          <include name="launchBrowser"/>
-          <include name="verifyHeaderNavigationLinks"/>
-        </methods>
-      </class> <!-- wondRxWeb.Test.AboutTest -->
       <class name="wondRxWeb.Test.BrokenLinksTest">
         <methods>
           <include name="brokenLinks"/>
